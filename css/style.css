@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Afacad", sans-serif;
+}
+
+:root {
+
+    --color-white-low: #e7e7e7;
+
+    --text-secondary-color: #bdbdbd;
+    --text-light-gray: #a8a8a8;
+    --transparent-gray: #61616185;
+    --bg-color: #202020;
+    --main-color: #38b8df;
+    --secondary-color: #115cb1;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 1rem 3rem;
+    background-color: var(--bg-color);
+    color: var(--text-secondary-color);
+    font-family: "Afacad", sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 1rem;
+}
+
+main {
+    top: 0;
+    bottom: 0;
+    padding: 0 1rem 1rem 1rem;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subTitle {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.division {
+    background-color: #a7a7a763;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.topMain {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchForm {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* LOGO PRINCIPAL  */
+.logoMain {
+    height: auto;
+    width: auto;
+    padding: 0.5rem;
+}
+
+.logoMain a img {
+    width: 50px;
+}
+/* FIM LOGO PRINCIPAL  */
+
+/* BARRA DE PESQUISA */
+.searchMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 0.5px solid var(--color-white-low);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchMain input{
+    width: 30rem;
+    height: auto;
+    background-color: transparent;
+    color: var(--color-white-low);
+    transition: all 0.3s ease-in-out;
+}
+
+.searchMain input:focus,
+.searchMain input:hover,
+.searchMain input:active{
+    background-color: transparent;
+}
+
+
+.searchMain button {
+    background-color: transparent;
+}
+
+.searchMain button i {
+    font-size: 1rem;
+    color: var(--color-white-low);
+}
+/* FIM DA BARRA DE PESQUISA */
+
+/* NAVEGAÇÃO AO LADO DA BARRA DE PESQUISA */
+.navBottonMain {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-left: 2rem;
+}
+
+.navBottonMain li a {
+    color: var(--color-white-low);
+    transition: color 0.3s ease-in-out;
+}
+.navBottonMain li a:hover {
+    color: var(--main-color);
+}
+
+/* ICONES DA BARRA PRINCIPAL */
+.navFavoritesCart {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.navFavoritesCart a i {
+    font-size: 1.5rem;
+    color: var(--color-white-low);
+    transition: color 0.3s ease-in-out;
+}
+
+.navFavoritesCart a i:hover {
+    color: var(--main-color);
+}
+
+/* FIM ICONES DA BARRA PRINCIPAL */
+
+/* LISTA NA BARRA PRINCIPA */
+.topSecond {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 4rem;
+}
+
+.topSecond li a {
+    color: var(--color-white-low);
+    transition: all 0.3s ease-in-out;
+}
+
+.topSecond li a:hover {
+    color: var(--main-color);
+}
+/* FIM LISTA NA BARRA PRINCIPA */
+
+
+/* PRIMEIRA SESSÃO */
+
+/* SLIDER PRINCIPAL */
+
+.sliderMain {
+    height: 300px;
+    width: 100%;
+    background-color: var(--transparent-gray);
+}
+
+/* FIM DO SLIDER PRINCIPAL */
+
+/* FIM DA PRIMEIRA SESSÃO */
+
+/* SEGUNDA SESSÃO */
+.secondSectiond {
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.sliderProduct {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sliderProduct button {
+    background-color: transparent;
+}
+
+.sliderProduct button i {
+    font-size: 2rem;
+    background-color: transparent;
+    color: var(--transparent-gray);
+    transition: color 0.3s ease-in-out;
+}
+
+.sliderProduct button i:hover {
+    color: var(--main-color);
+}
+
+.featuredProducts {
+    margin-top: -0.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.2rem;
+    padding: 1rem 0;
+}
+
+.imgSlider {
+    height: 350px;
+    width: 250px;
+    background-color: #a8a8a8;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imgSliderFocus {
+    height: 400px;
+    width: 250px;
+    background-color: #a8a8a8;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
